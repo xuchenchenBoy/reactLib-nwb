@@ -11,22 +11,39 @@
     "umd"
   ],
   "scripts": {
-    "build": "nwb build-react-component",
+    "build": "npm run build-css:build && nwb build-react-component --copy-files",
     "clean": "nwb clean-module && nwb clean-demo",
     "prepublishOnly": "npm run build",
     "start": "nwb serve-react-demo",
     "test": "nwb test-react",
     "test:coverage": "nwb test-react --coverage",
-    "test:watch": "nwb test-react --server"
+    "test:watch": "nwb test-react --server",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "build-css:build": "gulp compileLess",
+    "build-css:watch": "gulp watch"
   },
-  "dependencies": {},
+  "dependencies": {
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  },
   "peerDependencies": {
     "react": "16.x"
   },
   "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@storybook/addon-actions": "^5.2.4",
+    "@storybook/addon-links": "^5.2.4",
+    "@storybook/addons": "^5.2.4",
+    "@storybook/react": "^5.2.4",
+    "babel-loader": "^8.0.6",
+    "gulp": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
     "nwb": "0.23.x",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2"
+    "nwb-less": "^0.7.1",
+    "gulp-less": "^4.0.1",
+    "less": "^3.10.3",
+    "save-dev": "0.0.1-security"
   },
   "author": "",
   "homepage": "",
