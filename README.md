@@ -1,16 +1,9 @@
-# domain-mobile-lib
+# 基于nwb构建的react组件库
+默认构建commonjs和es module模式的组件库
+支持less写法
+支持按需加载方式
+使用glup编译less文件，打包成css文件
+文档使用storybook展示，暂时还没有配置
 
-[![Travis][build-badge]][build]
-[![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
-
-Describe domain-mobile-lib here.
-
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
-
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
-
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+## 构建命令
+npm run build
