@@ -39,7 +39,7 @@
     "babel-loader": "^8.0.6",
     "gulp": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
-    "nwb": "0.23.x",
+    "nwb": "0.25.x",
     "nwb-less": "^0.7.1",
     "gulp-less": "^4.0.1",
     "less": "^3.10.3",
